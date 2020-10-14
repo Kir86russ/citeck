@@ -1,0 +1,4 @@
+select id + 1 as start_number, elem - id - 1 as amount
+from (select id, lead(id) over (order by id) elem
+      from test_table) t
+where id < elem - 1;

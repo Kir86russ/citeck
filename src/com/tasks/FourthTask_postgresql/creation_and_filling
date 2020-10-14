@@ -1,0 +1,15 @@
+create table test_table(
+	id int
+);
+
+create unique index test_table_id_uindex on test_table (id);
+
+insert into test_table (id) values (1), (2), (4), (7), (8), (11), (15);
+
+
+
+
+
+
+
+
